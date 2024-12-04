@@ -5,6 +5,7 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import { AiOutlineAudit } from "react-icons/ai";
 import { BiSolidPurchaseTag } from "react-icons/bi";
 import { MdOnlinePrediction } from "react-icons/md";
+import { useNavigate } from 'react-router-dom'
 
 const navItems = [
     { title: "Receiving" , domain: "/inventory/receiving", icon: <RiFolderReceivedFill />},
@@ -19,16 +20,19 @@ const navItems = [
 
 const InventorySideBar = () => {
   
+  const navigate = useNavigate()
+
   return (
-    <div className="flex">
+    <div className="flex flex-col bg-gray-800 text-white h-screen px-4 py-6 justify-between">
       {/* InventorySideBar */}
-      <nav className="h-screen w-64 bg-gray-800 text-white flex flex-col items-start px-4 py-6">
+      <nav className=" w-64 flex flex-col items-start ">
         <h1 className="text-2xl font-bold mb-6">Inventory</h1>
         <ul className="w-full">
           {navItems.map((item, index) => (
             <li
               key={index}
               className="w-full px-4 py-2 mb-2 flex items-center gap-3 rounded-lg hover:bg-gray-700 cursor-pointer"
+              onClick={() => navigate(item.domain)}
             >
               <span className="text-xl">{item.icon}</span>
               <span>{item.title}</span>
@@ -36,6 +40,8 @@ const InventorySideBar = () => {
           ))}
         </ul>
       </nav>
+
+      <p className="font-bold text-xl text-yellow-500">Shift 2</p>
       
     </div>
   );

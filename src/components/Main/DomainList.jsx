@@ -30,6 +30,7 @@ const DomainList = () => {
                 onClick={() => navigate(row.domain)}
                 className="border border-gray-300 px-4 py-2 text-left hover:text-green-600">
                 {row.domain}
+
               </td>
               <td className="border border-gray-300 px-4 py-2 text-left">{row.description}</td>
             </tr>
