@@ -6,6 +6,7 @@ import Inventory from './components/Main/Inventory'
 import TrackingOrders from './components/Inventory/TrackingOrders'
 import Receipt from './components/Inventory/Receipt'
 import Out from './components/Inventory/Out'
+import Purchase from './components/Inventory/Purchase'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
           <Route path='/kitchen/orders-tracking' element={<TrackingOrders />}/>
           <Route path='/inventory/receiving' element={<Receipt />}/>
           <Route path='/inventory/out' element={<Out />}/>
+          <Route path='/inventory/purchase' element={<Purchase />}/>
 
 
 
