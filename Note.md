@@ -1,13 +1,11 @@
 
----
-
 Thêm chức năng:
 1. View Inventory
 Người dùng: Warehouse + Kitchen
 Mô tả: 
 - Danh sách các sản phẩm, nguyên liệu và số lượng của chúng có trong kho.
 - Người dùng có thể search món ăn. Dựa trên công thức được cho sẵn và số lượng nguyên liệu chứa trong kho. Hệ thống thực hiện tính toán, dự đoán món ăn đó có phục vụ được tối đa bao nhiêu suất ăn.
-Domain: view/inventory/items
+Domain: inventory/view/items
 
 2. View
 Người dùng: Inventory
@@ -49,3 +47,17 @@ Actor: Warehouse Staff
 Mô tả: Warehouse Staff xử lý và hoàn thành các đơn hàng xuất kho. Các bước bao gồm:
 "Receive Request" (Nhận yêu cầu): Nhận yêu cầu xuất hàng từ hệ thống.
 "Scan QR" (Quét mã QR): Quét mã hàng hóa để xác nhận xuất kho.
+
+---
+
+# Biểu đồ Dự Báo Nhu Cầu Theo Giờ (Forecast by Time of Day)
+Mô tả: Biểu đồ này hiển thị nhu cầu nguyên liệu của từng loại được chọn (ví dụ: "Cà chua", "Thịt bò") theo thời gian trong ngày.
+Mục đích:
+Giúp quản lý kho theo dõi nhu cầu cụ thể của từng nguyên liệu tại các khung giờ cao điểm, như 9 AM - 1 PM và 6 PM - 9 PM.
+Đảm bảo đủ nguyên liệu sẵn sàng tại các khung giờ có lượng tiêu thụ tăng đột biến.
+
+# Biểu đồ Theo Nhóm Nguyên Liệu (Forecast by Material Group)
+Mô tả: Biểu đồ này hiển thị tổng nhu cầu của các nhóm nguyên liệu (ví dụ: nguyên liệu tươi sống, chất lỏng, đóng gói) trong ngày.
+Mục đích:
+Cho phép Warehouse Manager theo dõi nhóm nguyên liệu nào cần tập trung bổ sung nhiều nhất.
+Dễ dàng ưu tiên các nhóm nguyên liệu có nhu cầu lớn, giảm thiểu nguy cơ thiếu hụt các nhóm quan trọng.
