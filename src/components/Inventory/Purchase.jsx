@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import InventoryNavigationBar from "../Navigation Bars/InventoryNavigationBar";
 
 function Purchase() {
-  const units = ["Unit", "Thùng", "Kg", "Liter"]; // Đơn vị
+  const units = ["Unit", "Box", "Kg", "Liter"]; // Đơn vị
 
   const [materialName, setMaterialName] = useState("");
   const [quantity, setQuantity] = useState("");
