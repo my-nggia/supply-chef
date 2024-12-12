@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<DomainList />}/>
           <Route path='/inventory' element={<Inventory />}/>
-          <Route path='/inventory/orders-tracking' element={<TrackingOrders />}/>
+          <Route path='/kitchen/orders-tracking' element={<TrackingOrders />}/>
           <Route path='/inventory/receiving' element={<Receipt />}/>
           <Route path='/inventory/out' element={<Out />}/>
 
