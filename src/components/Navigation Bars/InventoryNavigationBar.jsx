@@ -12,6 +12,7 @@ const domain_list = [
     { id: 6, domain: "/inventory/report", description: "Reporting" },
     { id: 7, domain: "/inventory/forecast", description: "Forecast" },
     { id: 8, domain: "/inventory/orders-tracking", description: "Orders Tracking" },
+    { id: 9, domain: "/inventory/view", description: "View" },
 ]
 
 function InventoryNavigationBar() {
