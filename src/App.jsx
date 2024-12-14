@@ -15,6 +15,7 @@ import Report02 from './components/Inventory/Report02'
 import ViewOrders from './components/Kitchen/ViewOrders'
 import SousChefOrders from './components/Kitchen/SousChefOrders'
 import ForecastPage from './components/Kitchen/ForecastPage'
+import ViewData from './components/Marketing/ViewData'
 
 function App() {
   
@@ -36,6 +37,7 @@ function App() {
           <Route path='/kitchen/view-orders' element={<ViewOrders />}/>
           <Route path='/kitchen/forecast' element={<ForecastPage />}/>
           <Route path='/kitchen/tien-luat/update-order' element={<SousChefOrders />}/>
+          <Route path='/marketing/view-data' element={<ViewData />}/>
 
 
 
