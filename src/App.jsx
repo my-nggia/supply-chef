@@ -10,6 +10,8 @@ import Purchase from './components/Inventory/Purchase'
 import Audit from './components/Inventory/Audit'
 import Tracking from './components/Inventory/Tracking'
 import Forecast from './components/Inventory/Forecast'
+import Report from './components/Inventory/Report'
+import Report02 from './components/Inventory/Report02'
 
 function App() {
   
@@ -27,6 +29,7 @@ function App() {
           <Route path='/inventory/audit' element={<Audit />}/>
           <Route path='/inventory/tracking' element={<Tracking />}/>
           <Route path='/inventory/forecast' element={<Forecast />}/>
+          <Route path='/inventory/report' element={<Report02 />}/>
 
 
 
