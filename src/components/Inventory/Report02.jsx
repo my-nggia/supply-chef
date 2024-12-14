@@ -176,6 +176,20 @@ function Report02() {
             {reportType === "import" ? "Top Imported Materials" : "Top Exported Materials"}
           </h2>
 
+            {/* CSV Download */}
+        <div className="mt-4 mb-4">
+            {data.length > 0 && (
+            <CSVLink
+                data={data}
+                headers={csvHeaders}
+                filename={`report_${reportType}_${timeOption}.csv`}
+                className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
+                Download CSV
+            </CSVLink>
+            )}
+        </div>
+
           {/* Table */}
           <div className="overflow-x-auto">
             <table className="table-auto w-full border-collapse border border-gray-300">
@@ -210,19 +224,7 @@ function Report02() {
                           </table>
                         </div>
               
-                        {/* CSV Download */}
-                        <div className="mt-4">
-                          {data.length > 0 && (
-                            <CSVLink
-                              data={data}
-                              headers={csvHeaders}
-                              filename={`report_${reportType}_${timeOption}.csv`}
-                              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
-                            >
-                              Download CSV
-                            </CSVLink>
-                          )}
-                        </div>
+                        
                       </div>
                     </div>
                   </div>
