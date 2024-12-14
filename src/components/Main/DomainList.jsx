@@ -9,7 +9,10 @@ const tableData = [
     { domain: "/inventory/audit", description: "Inventory Audit" },
     { domain: "/inventory/purchase", description: "Purchasing Materials" },
     { domain: "/inventory/report", description: "Report" },
-    { domain: "/inventory/forecast", description: "View forecast" },
+    { domain: "/inventory/forecast", description: "View Forecast" },
+    { domain: "/kitchen/view-orders", description: "View Orders" },
+    { domain: "/kitchen/update-order", description: "Update Order" },
+    { domain: "/kitchen/forecast", description: "View Forecast" },
   ];
 
 const DomainList = () => {
