@@ -10,10 +10,10 @@ const ViewOrders = () => {
     const dummyOrders = [
       { id: 1, table: 5, dish: "Lẩu gà", quantity: 2, status: "Pending", assignedChef: "", startTime: null },
       { id: 2, table: 3, dish: "Lẩu bò", quantity: 1, status: "Pending", assignedChef: "", startTime: null },
-      { id: 3, table: 7, dish: "Lẩu hải sản", quantity: 2, status: "Pending", assignedChef: "", startTime: null },
-      { id: 4, table: 7, dish: "Cơm rang", quantity: 1, status: "Pending", assignedChef: "", startTime: null },
-      { id: 5, table: 7, dish: "Súp rau củ", quantity: 5, status: "Pending", assignedChef: "", startTime: null },
-      { id: 6, table: 7, dish: "Mì xào bò", quantity: 3, status: "Pending", assignedChef: "", startTime: null },
+      { id: 3, table: 8, dish: "Lẩu hải sản", quantity: 2, status: "Pending", assignedChef: "", startTime: null },
+      { id: 4, table: 9, dish: "Cơm rang", quantity: 1, status: "Pending", assignedChef: "", startTime: null },
+      { id: 5, table: 1, dish: "Súp rau củ", quantity: 5, status: "Pending", assignedChef: "", startTime: null },
+      { id: 6, table: 2, dish: "Mì xào bò", quantity: 3, status: "Pending", assignedChef: "", startTime: null },
     ];
     setOrders(dummyOrders);
   }, []);
@@ -38,17 +38,17 @@ const ViewOrders = () => {
     <>
     <KitchenNavigationBar />
     <div className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold mb-4">View Customer Orders</h1>
+      <h1 className="text-3xl font-bold mb-4">Danh sách Orders</h1>
       <table className="table-auto w-full bg-white border-collapse border border-gray-300">
         <thead>
           <tr className="bg-gray-200">
             <th className="border px-4 py-2">Order ID</th>
-            <th className="border px-4 py-2">Table Number</th>
-            <th className="border px-4 py-2">Dish</th>
-            <th className="border px-4 py-2">Quantity</th>
-            <th className="border px-4 py-2">Status</th>
-            <th className="border px-4 py-2">Assigned Chef</th>
-            <th className="border px-4 py-2">Assign Chef</th>
+            <th className="border px-4 py-2">Số Bàn</th>
+            <th className="border px-4 py-2">Món Ăn</th>
+            <th className="border px-4 py-2">Số lượng</th>
+            <th className="border px-4 py-2">Trạng thái</th>
+            <th className="border px-4 py-2">Đầu bếp thực hiện</th>
+            <th className="border px-4 py-2">Chọn</th>
           </tr>
         </thead>
         <tbody>
@@ -75,7 +75,7 @@ const ViewOrders = () => {
                     defaultValue={""}
                   >
                     <option value="" disabled>
-                      Select Sous Chef
+                      Chọn đầu bếp
                     </option>
                     {chefs.map((chef) => (
                       <option key={chef} value={chef}>

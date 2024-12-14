@@ -13,6 +13,8 @@ import Forecast from './components/Inventory/Forecast'
 import Report from './components/Inventory/Report'
 import Report02 from './components/Inventory/Report02'
 import ViewOrders from './components/Kitchen/ViewOrders'
+import SousChefOrders from './components/Kitchen/SousChefOrders'
+import ForecastPage from './components/Kitchen/ForecastPage'
 
 function App() {
   
@@ -32,6 +34,8 @@ function App() {
           <Route path='/inventory/forecast' element={<Forecast />}/>
           <Route path='/inventory/report' element={<Report02 />}/>
           <Route path='/kitchen/view-orders' element={<ViewOrders />}/>
+          <Route path='/kitchen/forecast' element={<ForecastPage />}/>
+          <Route path='/kitchen/tien-luat/update-order' element={<SousChefOrders />}/>
 
 
 

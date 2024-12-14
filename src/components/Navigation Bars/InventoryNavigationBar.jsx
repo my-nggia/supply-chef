@@ -35,7 +35,7 @@ function InventoryNavigationBar() {
         {/* info */}
         <div className='flex justify-center items-center p-2'>
             <p className='text-sm font-bold bg-yellow-400 rounded-md p-1 mx-2'>Shift 2</p>   
-            <p className='text-sm font-bold bg-purple-100 rounded-md p-1 mx-2'>Knaflic</p>   
+            <p className='text-sm font-bold bg-purple-100 rounded-md p-1 mx-2'>Minh Nguyen</p>   
         </div>
     </div>
   )

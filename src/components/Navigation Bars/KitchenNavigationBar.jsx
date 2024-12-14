@@ -3,16 +3,10 @@ import { TbStack3Filled } from "react-icons/tb";
 import { useNavigate } from 'react-router-dom'
 
 const domain_list = [
-    { id: 1, domain: "/inventory", description: "Inventory" },
-    // { id: 6, domain: "/inventory/receiving", description: "Receiving" },
-    { id: 2, domain: "/inventory/out", description: "Fulfillment" },
-    { id: 3, domain: "/inventory/tracking", description: "Tracking" },
-    { id: 4, domain: "/inventory/audit", description: "Audit" },
-    { id: 5, domain: "/inventory/purchase", description: "Purchasing" },
-    { id: 6, domain: "/inventory/report", description: "Reporting" },
-    { id: 7, domain: "/inventory/forecast", description: "Forecast" },
-    // { id: 8, domain: "/inventory/orders-tracking", description: "Orders Tracking" },
-    { id: 8, domain: "/inventory/view", description: "View" },
+    { id: 1, domain: "/inventory/forecast", description: "View Inventory" },
+    { id: 2, domain: "/kitchen/view-orders", description: "View Orders" },
+    { id: 3, domain: "/kitchen/tien-luat/update-order", description: "Update Order" },
+    { id: 4, domain: "/kitchen/forecast", description: "View Forecast" },
 ]
 
 function KitchenNavigationBar() {
