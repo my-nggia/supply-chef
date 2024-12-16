@@ -70,7 +70,7 @@ function ViewData() {
 
   return (
     <div className="w-full">
-      <InventoryNavigationBar />
+      {/* <InventoryNavigationBar /> */}
       <div className="h-screen bg-gray-100 p-4">
         <h1 className="text-3xl font-bold mb-4">Báo Cáo Dự Báo & Thống Kê</h1>
 

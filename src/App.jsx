@@ -16,6 +16,7 @@ import ViewOrders from './components/Kitchen/ViewOrders'
 import SousChefOrders from './components/Kitchen/SousChefOrders'
 import ForecastPage from './components/Kitchen/ForecastPage'
 import ViewData from './components/Marketing/ViewData'
+import Accounting from './components/Accounting/Accounting'
 
 function App() {
   
@@ -38,6 +39,7 @@ function App() {
           <Route path='/kitchen/forecast' element={<ForecastPage />}/>
           <Route path='/kitchen/tien-luat/update-order' element={<SousChefOrders />}/>
           <Route path='/marketing/view-data' element={<ViewData />}/>
+          <Route path='/accounting' element={<Accounting />}/>
 
 
 

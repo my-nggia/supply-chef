@@ -13,7 +13,8 @@ const tableData = [
     { domain: "/kitchen/view-orders", description: "View Orders" },
     { domain: "/kitchen/tien-luat/update-order", description: "Update Order" },
     { domain: "/kitchen/forecast", description: "View Forecast" },
-    { domain: "/marketing/view-data", description: "View Data" },
+    { domain: "/marketing/view-data", description: "Marketing" },
+    { domain: "/accounting", description: "Accounting" },
   ];
 
 const DomainList = () => {
