@@ -15,6 +15,7 @@ const tableData = [
     { domain: "/kitchen/forecast", description: "View Forecast" },
     { domain: "/marketing/view-data", description: "Marketing" },
     { domain: "/accounting", description: "Accounting" },
+    { domain: "/dss", description: "DSS" },
   ];
 
 const DomainList = () => {
